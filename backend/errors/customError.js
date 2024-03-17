@@ -4,9 +4,10 @@
 /*-------------------------------------------------- */
 
 class CustomError extends Error {
-    name="customError"
+    name="CustomError"
     constructor(message, statusCode=500) {
         super(message)
+        this.statusCode = statusCode
     }
 }
 
